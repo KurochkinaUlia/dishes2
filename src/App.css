@@ -1,0 +1,12 @@
+.app-common {
+    margin: 0 auto;
+    width: 1060px;
+}
+
+.flex-common {
+    display: flex;
+}
+
+.block-menu {
+    justify-content: space-between;
+}

@@ -1,0 +1,25 @@
+.common-navbar {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.ul-menu {
+    display: flex;
+    align-items: center;
+
+}
+
+.li-menu a {
+
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: #333333;
+    list-style-type: none;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.li-menu:hover {
+    color: #EF633E;
+}
