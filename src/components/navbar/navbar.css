@@ -1,5 +1,4 @@
 .common-navbar {
-    margin-right: 100px;
     margin-left: 100px;
 }
 
@@ -10,8 +9,8 @@
 }
 
 .li-menu a {
-
-    font-family: 'Manrope', sans-serif;
+text-decoration: none;
+    font-family: 'Elsie', cursive;
     font-style: normal;
     font-size: 16px;
     color: #333333;

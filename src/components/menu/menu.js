@@ -16,7 +16,7 @@ class Menu extends Component {
                     <div className='circle-menu'>
                         <img className='icon-menu'
                              src={item.icon}
-                            alt='icon'
+                             alt='icon'
                         />
                     </div>
                     <div className='name-menu'>{item.name}</div>
@@ -25,7 +25,7 @@ class Menu extends Component {
         )
         return (
             <div>
-                <div className='heading-menu'>Menu</div>
+                <div className='heading-menu'>Меню</div>
                 <div className='common'>
                     {itemMenu}
                 </div>

@@ -1,11 +1,22 @@
 .app-common {
     margin: 0 auto;
-    width: 1060px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 98vh;
 }
 
-.flex-common {
-    display: flex;
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+
 }
+
+.footer-app {
+    margin-top: auto;
+}
+
 
 .block-menu {
     justify-content: space-between;

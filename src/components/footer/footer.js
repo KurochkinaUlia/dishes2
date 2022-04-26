@@ -15,6 +15,7 @@ class Footer extends Component {
             </div>
         )
         return (
+
             <div className='common-footer'>
                 <footer className='footer'>
                     <div className='common-network'>

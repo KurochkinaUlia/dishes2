@@ -18,8 +18,9 @@ import youtube from './jpg/logo_youtube_icon_143199.png';
 import instagram from './jpg/logo_instagram_icon_143177.png';
 import vkontakte from './jpg/logo_vk_vkontakte_icon_143187.png';
 import telegram from './jpg/logo_telegram_airplane_air_plane_paper_airplane_icon_143170.png'
-
-
+import {BrowserRouter, Route,} from "react-router-dom";
+import Favicon from "react-favicon";
+import fIcon from './jpg/FIcon.ico';
 
 
 
@@ -39,30 +40,47 @@ class App extends Component {
 
         ],
         footer: [
-            {id:1, icon: whatsapp},
-            {id:5, icon: telegram},
-            {id:2, icon: youtube},
-            {id:3, icon: instagram},
-            {id:4, icon: vkontakte}
+            {id: 1, icon: whatsapp},
+            {id: 5, icon: telegram},
+            {id: 2, icon: youtube},
+            {id: 3, icon: instagram},
+            {id: 4, icon: vkontakte}
         ]
     }
 
     render() {
         return (
             <div className='app-common'>
+                <Favicon url={fIcon}/>
                 <Header array={this.state.carousel}/>
+                <div className='content'>
+                    <Route path='/main' render={() =>
+                        <>
+                            <div className='flex-common block-menu'>
+                                <Menu decorationMenu={this.state.decorationMenu}/>
+                            </div>
+                            <div className='flex-common'>
+                                <Carousel img={this.state.carousel}/>
+                            </div>
+                        </>
+                    }/>
 
-
-                <div className='flex-common block-menu'>
-                    <Menu decorationMenu={this.state.decorationMenu}/>
+                    <Route path='/menu' render={() =>
+                        <div className='flex-common block-menu'>
+                            <Menu decorationMenu={this.state.decorationMenu}/>
+                        </div>
+                    }/>
                 </div>
-                <div className='flex-common'>
-                    <Carousel img={this.state.carousel}/>
-                </div>
+                <div className='footer-app'>
                 <Footer footer={this.state.footer}/>
+                </div>
             </div>
+
         )
     }
 }
 
 export default App;
+
+
+
