@@ -14,21 +14,3 @@
     cursor: pointer;
     text-decoration: none;
 }
-
-
-
-.button-write-to-us {
-    font-family: 'Elsie', cursive;
-    color: #5DC4B8;
-    font-weight: bold;
-    border-radius: 10px;
-    border: 1px solid #5DC4B8;
-    width: 154px;
-    height: 48px;
-    background-color: transparent;
-}
-.button-write-to-us:hover {
-    border: 1px solid #EF633E;
-    cursor: pointer;
-    color: #EF633E;
-}

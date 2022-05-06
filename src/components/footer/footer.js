@@ -1,6 +1,7 @@
 import React from "react";
 import './footer.css';
 import {Component} from "react";
+import Button from "../personalСomponents/button/button";
 
 
 class Footer extends Component {
@@ -48,7 +49,10 @@ class Footer extends Component {
                         <div className='h3'>Новостная рассылка</div>
                         <input placeholder='  Введите Ваш e-mail:'
                                className='newsletter-footer'/>
-                        <button className='button-write-to-us add'>ПОДПИСАТЬСЯ</button>
+                        <div className='add'>
+                        <Button text={'ПОДПИСАТЬСЯ'}/>
+                        </div>
+
 
                     </div>
                 </footer>

@@ -1,0 +1,27 @@
+.select-category {
+    width: 200px;
+    height: 35px;
+    border-radius: 12px;
+    border: 1px solid #DADADA;
+    outline: none;
+    text-align: center;
+    background: #f6f4f4;
+    font-family: 'Elsie', cursive;
+    font-size: 14px;
+}
+
+.select-category:focus {
+    border: 1px solid #5DC4B8;
+}
+
+.select-category:hover {
+    border: 1px solid #EF633E;
+}
+
+.category {
+    margin-top: -60px;
+}
+
+option {
+    outline: none;
+}

@@ -1,0 +1,27 @@
+.input-my {
+    width: 250px;
+    height: 35px;
+    border-radius: 12px;
+    border: 1px solid #DADADA;
+    margin-top: 5px;
+    outline: none;
+    background: #f6f4f4;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: 'Elsie', cursive;
+}
+
+.input-my:focus {
+    border: 1px solid #5DC4B8;
+}
+
+.input-my:hover {
+    border: 1px solid #EF633E;
+}
+
+.input-my::placeholder {
+    font-size: 14px;
+    font-weight: initial;
+    color: #abafaf;
+    font-family: 'Elsie', cursive;
+}

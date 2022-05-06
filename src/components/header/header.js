@@ -2,6 +2,7 @@ import React from "react";
 import './header.css';
 import Navbar from "../navbar/navbar";
 import {NavLink} from "react-router-dom";
+import Button from "../personalСomponents/button/button";
 
 const Header = (props) => {
 
@@ -14,7 +15,9 @@ const Header = (props) => {
                     </span>
                 <Navbar />
             </div>
-            <button className='button-write-to-us'>ДОБАВИТЬ РЕЦЕПТ</button>
+            <NavLink to='/add-recipe'>
+            <Button text = {'ДОБАВИТЬ РЕЦЕПТ'}/>
+            </NavLink>
         </div>
     )
 }

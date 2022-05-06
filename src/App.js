@@ -18,10 +18,11 @@ import youtube from './jpg/logo_youtube_icon_143199.png';
 import instagram from './jpg/logo_instagram_icon_143177.png';
 import vkontakte from './jpg/logo_vk_vkontakte_icon_143187.png';
 import telegram from './jpg/logo_telegram_airplane_air_plane_paper_airplane_icon_143170.png'
-import {BrowserRouter, Route,} from "react-router-dom";
+import {Route} from "react-router-dom";
 import Favicon from "react-favicon";
 import fIcon from './jpg/FIcon.ico';
-
+import AddRecipe from "./components/addRecipe/addRecipe";
+import MyRecipes from "./components/myRecipes/myRecipes";
 
 
 class App extends Component {
@@ -37,7 +38,6 @@ class App extends Component {
             {id: 3, color: 'colorDinner', name: 'Ужины', icon: img6},
             {id: 4, color: 'colorSnack', name: 'Перекусы', icon: img7},
             {id: 5, color: 'colorDessert', name: 'Десерты', icon: img8},
-
         ],
         footer: [
             {id: 1, icon: whatsapp},
@@ -70,9 +70,18 @@ class App extends Component {
                             <Menu decorationMenu={this.state.decorationMenu}/>
                         </div>
                     }/>
+
+                    <Route path='/add-recipe' render={() =>
+                        <AddRecipe/>
+                    }/>
+
+                    <Route path='/save' render={() =>
+                    <MyRecipes />
+                    } />
+
                 </div>
                 <div className='footer-app'>
-                <Footer footer={this.state.footer}/>
+                    <Footer footer={this.state.footer}/>
                 </div>
             </div>
 

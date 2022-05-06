@@ -1,0 +1,85 @@
+.your-photos {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.common-add-photos {
+    width: 1000px;
+    border-radius: 12px;
+    margin: 0 auto;
+    border: 1px solid #DADADA;
+    outline: none;
+    background: #f6f4f4;
+}
+
+.input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.input__file-icon-wrapper {
+    height: 48px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #fff;
+}
+
+.input__file-button-text {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.input__file-button {
+    width: 250px;
+    height: 48px;
+    background: #5DC4B8;
+    color: #676a6c;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.input__file-icon {
+    width: 40px;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container-images {
+    border: 1px solid #DADADA;
+    border-radius: 12px;
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-images:hover {
+    border: 1px solid #c0bfbf;
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.img-style {
+    width: 70px;
+    height: 70px;
+
+}
+
